@@ -1,0 +1,12 @@
+---
+
+git_repo: git@github.com:paolopaolopaolo/yurt-test.git
+repo_name: yurt-test
+
+project_name: yurttest
+application_name: yurttest
+
+git_ssh_pub_key: "{{ lookup('vault', 'secret/git_keys_QLDinBufQSzNMXTn9jEKWT8n7', 'public_key', 'vault_one_true_vault.json') }}"
+git_ssh_priv_key: |
+  "{{ lookup('vault', 'secret/git_keys_QLDinBufQSzNMXTn9jEKWT8n7', 'private_key', 'vault_one_true_vault.json') }}"
+
